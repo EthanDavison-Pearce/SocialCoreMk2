@@ -11,7 +11,7 @@ export const RegisterComp = () => {
   const { user, loading, error } = useSelector((store) => store.user);
   const [regData, setRegData] = useState({
     pic: "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
-    isAdmin: false,
+    // isAdmin: false,
     name: "",
     email: "",
     password: "",
@@ -32,7 +32,7 @@ export const RegisterComp = () => {
     reader.readAsDataURL(file);
   };
   const handleSubmit = () => {
-    const url = "https://messenger-clo.herokuapp.com/auth";
+    const url = "http://localhost:5001/auth";
     if (user.pic) regData["pic"] = user.pic;
     dispatch(authRegister(url, regData));
   };

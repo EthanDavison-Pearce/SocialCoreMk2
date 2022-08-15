@@ -23,6 +23,7 @@ export const authRegister = (url, user) => async (dispatch) => {
     let data = await res.json();
     localStorage.setItem("userInfo", JSON.stringify(data));
     dispatch(authUser(data));
+    console.log(data)
   } catch (err) {
     dispatch(authLoading(false));
     dispatch(authError(true));
