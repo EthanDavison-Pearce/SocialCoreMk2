@@ -28,7 +28,7 @@ const io = socket(server, {
   pingTimeout: 6000,
   cors: {
     "Access-Control-Allow-Origin": "*",
-    origin: "http://localhost:3000",
+    origin: "https://messanger-beryl.vercel.app",
     // credentials: true,
   },
 });

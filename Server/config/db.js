@@ -1,4 +1,3 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-module.exports = () => mongoose.connect("mongodb+srv://Randomedp:uPU7igXXduYngN5u@Cluster0.nurp4vb.mongodb.net/?retryWrites=true&w=majority");
-console.log(mongoose.connection.readyState);
+module.exports = () => mongoose.connect("mongodb+srv://Randomedp:uPU7igXXduYngN5u@cluster0.nurp4vb.mongodb.net/?retryWrites=true&w=majority");
