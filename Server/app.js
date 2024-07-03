@@ -15,7 +15,7 @@ app.use("/auth", userController);
 app.use("/chat", chatController);
 app.use("/message", messageController);
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5002;
 let server = app.listen(PORT, async (req, res) => {
   try {
     await connect();
