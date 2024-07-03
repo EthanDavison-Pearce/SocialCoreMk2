@@ -1,3 +1,3 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-module.exports = () => mongoose.connect("mongodb+srv://Randomedp:uPU7igXXduYngN5u@cluster0.nurp4vb.mongodb.net/?retryWrites=true&w=majority");
+module.exports = () => mongoose.connect("mongodb+srv://ethan:password123@cluster0.iuhx4hp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
