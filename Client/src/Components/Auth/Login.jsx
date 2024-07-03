@@ -21,7 +21,7 @@ export const LoginComp = () => {
   };
 
   const handleSubmit = () => {
-    const url = "http://localhost:5001/auth/login";
+    const url = "http://localhost:5002/auth/login";
     dispatch(authRegister(url, regData));
   };
   if (user._id) {

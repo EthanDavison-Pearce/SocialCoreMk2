@@ -16,7 +16,7 @@ export const newCreatedChat = (payload) => ({
 
 export const makeRecentChatApi = (token) => async (dispatch) => {
   recentLoding(true);
-  const url = `http://localhost:5001/chat`;
+  const url = `http://localhost:5002/chat`;
   try {
     let res = await fetch(url, {
       method: "get",
