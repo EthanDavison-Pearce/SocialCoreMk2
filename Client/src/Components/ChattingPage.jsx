@@ -14,7 +14,7 @@ import { sendMessage } from "./Redux/Chatting/action";
 import { addUnseenmsg } from "./Redux/Notification/action";
 
 import io from "socket.io-client";
-const SERVER_POINT = "http://localhost:5001";
+const SERVER_POINT = "http://localhost:5002";
 var socket, currentChattingWith;
 
 export const ChattingPage = () => {
